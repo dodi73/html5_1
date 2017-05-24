@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- css fileok beszúrása -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+
+    <!-- Ez a navigáció. nav -->
+    <nav>
+        <a target="_blank" href="http://origo.hu">Origo</a>
+        <a href="pages/about.html">Rólunk</a>
+        <a href="#section1">Section1</a>
+        <a href="#section2">Section2</a>
+        <a href="#" onclick="bigSection()">Szekció növelése</a>
+    </nav>
+
+    <!-- Első szekció -->
+    <section id="section1">
+        <!-- Új elem a bejegyzés elem: article-->
+        <article>
+            <h1>ItFactory tanfolyam</h1>
+            <p>HTML5 tanfolyam, az<br>ITFactory gondozásában.</p>
+
+            <img
+                    src="http://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG-180x180.png"
+                    style="max-width: 100px; border: solid 5px #e0e0e0;"
+                    id="img1"
+                    class="test-images">
+        </article>
+        <div style="height: 1000px;">&nbsp;</div>
+    </section>
+
+
+
+    <section id="section2">
+        <!-- aside elemek -->
+        <aside style="float: left;">
+            <h3>Oldalra csoportosított elemek</h3>
+        </aside>
+        <aside style="float: left;">
+            <h3>Oldalra csoportosított elemek</h3>
+        </aside>
+    </section>
+
+    <div style="height: 1000px;">&nbsp;</div>
+
+    <!-- footer, lábléc. megadva, hogy a pozíciója fix legyen
+    az az mindig az alján és jobbról balról 0-ra. -->
+    <footer style="position: fixed; left: 0; right: 0; bottom: 0;">
+        &copy; Tóth József
+    </footer>
+
+    <!-- JS fileok beszúrása -->
+    <script src="js/main.js"></script>
+
+
+</body></html>
