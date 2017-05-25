@@ -16,42 +16,63 @@
         <a href="#section2">Section2</a>
         <a href="#" onclick="bigSection()">Szekció növelése</a>
     </nav>
+    <!-- /Ez a navigáció. nav -->
 
     <!-- Első szekció -->
     <section id="section1">
         <!-- Új elem a bejegyzés elem: article-->
         <article>
-            <h1>ItFactory tanfolyam</h1>
-            <p>HTML5 tanfolyam, az<br>ITFactory gondozásában.</p>
+            <h1>Regisztráció</h1>
+            <p>Kérjük adja meg az adatait</p>
 
-            <img
+            <!-- <form novalidate> ,kikapcsolja a html ellenőrzést -->
+            <form novalidate method="post" action="http://nettuts.hu/post">
+                <label for="email1">E-mail cím:</label>
+                <input name="email1" type="email" id="email1" autofocus>
+                <br><br>
+                <label for="eletkor1">Életkor:</label>
+                <input name="eletkor1" type="number" id="eletkor1" min="18" max="60">
+                <br><br>
+                <label for="szulev1">Születési év:</label>
+                <input name="szulev1" type="date" id="szulev1" min="1890" max="2017">
+                <br><br>
+                <label for="tel1">Telefon:</label>
+                <input name="tel1" type="tel" id="tel1">
+                <br><br>
+                <label for="color1">Kedvenc szín:</label>
+                <input name="color1" type="color" id="color1">
+                <br><br>
+                <label for="photo1">Profil kép:</label>
+                <input name="photo1" type="file" id="photo1">
+                <br><br>
+                <label for="password1">Jelszó:</label>
+                <input name="password1" type="password" id="password1" maxlength="8">
+                <br><br>
+                <input name="submit1" type="submit" value="Regisztrálok">
+            </form>
+
+           <!-- <img
                     src="http://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG-180x180.png"
                     style="max-width: 100px; border: solid 5px #e0e0e0;"
                     id="img1"
                     class="test-images">
+            -->
         </article>
-        <div style="height: 1000px;">&nbsp;</div>
+        <div style="height: 500px;">&nbsp;</div>
     </section>
+    <!-- /Első szekció -->
+
+    <!--  -->
 
 
 
-    <section id="section2">
-        <!-- aside elemek -->
-        <aside style="float: left;">
-            <h3>Oldalra csoportosított elemek</h3>
-        </aside>
-        <aside style="float: left;">
-            <h3>Oldalra csoportosított elemek</h3>
-        </aside>
-    </section>
-
-    <div style="height: 1000px;">&nbsp;</div>
 
     <!-- footer, lábléc. megadva, hogy a pozíciója fix legyen
     az az mindig az alján és jobbról balról 0-ra. -->
     <footer style="position: fixed; left: 0; right: 0; bottom: 0;">
         &copy; Tóth József
     </footer>
+    <!-- footer vége -->
 
     <!-- JS fileok beszúrása -->
     <script src="js/main.js"></script>

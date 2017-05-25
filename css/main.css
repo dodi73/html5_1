@@ -1,9 +1,15 @@
 #section1 {
     height: 0;
-    opacity: 0;
-    transition: all 1s;
+    opacity: 0;             /* Áttetszőség */
+    width: 500px;
+    position: absolute;     /* Pozíció rákerül az alatta lévő tartalomra*/
+    transition: all 1s;     /* Animáció 1s-os késleltetés*/
 }
+
 #section1.big {
     opacity: 1;
-    height: 1000px;
+    height: 500px;
+    background-color: #00acc1;
+    width: 500px;
+    position: absolute;
 }
